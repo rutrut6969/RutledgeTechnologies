@@ -3,24 +3,13 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "rutledge-technologies.vercel.app" }],
+      "has": [{ "type": "host", "value": "(.*)\\.vercel\\.app" }],
       "destination": "https://rutledgetechnologies.com/$1",
       "permanent": true
     },
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.rutledgetechnologies.com/$1" }],
-      "destination": "https://rutledgetechnologies.com",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "rutledge-technologies-kwgw56u1q-rutrut6969s-projects.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "www.rutledgetechnologies.com" }],
       "destination": "https://rutledgetechnologies.com/$1",
       "permanent": true
     }
