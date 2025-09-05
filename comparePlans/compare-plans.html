@@ -594,5 +594,47 @@
         "description": "Compare website plans: Starter, Professional, Advanced, All-Inclusive, and Partner Plan."
       }
     </script>
+        </script>
+    <!-- Vercel Analytics -->
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Vercel Speed Insights -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <!-- Custom Event Tracking Example -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Track "Book Now" button clicks
+        const bookNowBtn = document.querySelector("#book-now");
+        if (bookNowBtn) {
+          bookNowBtn.addEventListener("click", () => {
+            window.va && window.va("track", "BookNowClicked");
+          });
+        }
+
+        // Track "See Details" button clicks
+        const seeDetailsBtn = document.querySelector("#see-details");
+        if (seeDetailsBtn) {
+          seeDetailsBtn.addEventListener("click", () => {
+            window.va && window.va("track", "SeeDetailsClicked");
+          });
+        }
+
+        // Track "See Details" button clicks
+        const portfolioBtn = document.querySelector("#portfolio-btn");
+        if (seeDetailsBtn) {
+          portfolioBtn.addEventListener("click", () => {
+            window.va && window.va("track", "PortfolioClicked");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
