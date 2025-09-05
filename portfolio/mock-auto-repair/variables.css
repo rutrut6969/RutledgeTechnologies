@@ -14,7 +14,12 @@
   --color-gray-700: #4a5568;
   --color-black: #0f1115;
   --color-white: #ffffff;
-
+  --color-blue: var(--color-secondary);
+  --color-green: var(--color-success);
+  --color-gray: var(--color-gray-200);
+  --font-primary: var(--font-sans);
+  --font-heading: var(--font-display);
+  --radius: var(--radius-md);
   /* Status */
   --color-success: #2e7d32;
   --color-warning: #f2994a;
