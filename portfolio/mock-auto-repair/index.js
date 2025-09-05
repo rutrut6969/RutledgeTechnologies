@@ -36,3 +36,44 @@ export const products = [
     img: "/images/.../tire.jpg",
   },
 ];
+
+const hamMenu = document.querySelector(".hamburger-menu");
+const navMenu = document.querySelector(".nav-links");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+function closeMenu() {
+  if (hamMenu && navMenu && hamMenu.classList.contains("active")) {
+    hamMenu.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+}
+
+document.querySelectorAll(".nav-links a, .dropdown-menu a").forEach((a) => {
+  a.addEventListener("click", closeMenu);
+});
+
+let lastY = window.scrollY;
+window.addEventListener(
+  "scroll",
+  () => {
+    if (Math.abs(window.scrollY - lastY) > 10) closeMenu();
+    lastY = window.scrollY;
+  },
+  { passive: true }
+);
+
+window.addEventListener("hashchange", closeMenu);
+window.addEventListener("click", (e) => {
+  if (
+    navMenu.classList.contains("active") &&
+    !navMenu.contains(e.target) &&
+    !hamMenu.contains(e.target)
+  ) {
+    closeMenu();
+  }
+});
+
+const dropdowns = document.querySelectorAll(".dropdown-menu");

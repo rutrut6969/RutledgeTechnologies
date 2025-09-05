@@ -12,10 +12,17 @@
   </head>
   <body>
     <nav>
-      <div class="logo"></div>
+      <div class="nav-logo">
+        <p>Auto Repair Shop</p>
+      </div>
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li class="dropdown">
+        <li class="nav-link"><a href="#hero">Home</a></li>
+        <li class="dropdown nav-link">
           <a href="#services">
             <i class="fa-solid fa-screwdriver-wrench"></i> Services</a
           >
@@ -25,7 +32,7 @@
             <li><a href="#diagnostics">Diagnostics</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="dropdown nav-link">
           <a href="#products"><i class="fa-solid fa-box-open"></i> Products</a>
           <ul class="dropdown-menu">
             <li><a href="#batteries">Batteries</a></li>
@@ -33,26 +40,26 @@
             <li><a href="#filters">Air Filters</a></li>
           </ul>
         </li>
-        <li><a href="#about">About</a></li>
-        <li><a href="reviews">Reviews</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="reviews" class="nav-link">Reviews</a></li>
         <li>
-          <a href="contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+          <a href="contact" class="nav-link"
+            ><i class="fa-solid fa-envelope"></i> Contact</a
+          >
         </li>
       </ul>
     </nav>
     <section class="hero" id="hero">
-      <div class="hero-img">
-        <img src="./assets/images/under-car.jpg" alt="Man Working Under Car" />
-        <header>
-          <h1>Fast, reliable auto repair in Evansville</h1>
-          <p>Brakes • Oil • Diagnostics • Tires</p>
-          <a href="#book" class="btn-primary">Book Appointment</a>
-          <span>Call Now: (888) 555-5858</span>
-        </header>
-      </div>
+      <div class="page-bg" aria-hidden="true"></div>
+      <header class="hero-header">
+        <h1>Fast, reliable auto repair in Evansville</h1>
+        <p>Brakes • Oil • Diagnostics • Tires</p>
+        <a href="#book" class="btn-primary">Book Appointment</a>
+        <span>Call Now: (888) 555-5858</span>
+      </header>
     </section>
 
-    <section class="services" id="services">
+    <section class="services section-opaque" id="services">
       <header>
         <h3>🛠️ Our Services</h3>
         <p>Quality repairs and maintenance to keep you safe on the road.</p>
@@ -88,7 +95,7 @@
       </div>
     </section>
 
-    <section class="products" id="products">
+    <section class="products section-translucent" id="products">
       <header>
         <h3>🛒 Products We Offer</h3>
         <p>Affordable, reliable auto parts and accessories.</p>
@@ -118,7 +125,7 @@
         <a href="#contact">Request a custom order.</a>
       </div>
     </section>
-    <section class="about" id="about">
+    <section class="about section-opaque" id="about">
       <header>
         <h2>About Us</h2>
         <p>Family-owned. Locally trusted. ASE-certified Technicians</p>
@@ -153,7 +160,7 @@
         </li>
       </ul>
     </section>
-    <section class="reviews" id="reviews">
+    <section class="reviews section-translucent" id="reviews">
       <header>
         <h2>What Our Customers Say</h2>
         <p>Trusted by drivers across Evansville</p>
@@ -193,7 +200,7 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact section-translucent" id="contact">
       <header>
         <h3>Get In Touch</h3>
         <p>Book an appointment, get a quote, or just stop by.</p>

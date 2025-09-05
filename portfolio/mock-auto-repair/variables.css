@@ -68,4 +68,6 @@
   --link-hover: #1b64c6;
   --card-bg: var(--color-white);
   --card-border: var(--color-gray-200);
+
+  --nav-height: 72px;
 }
