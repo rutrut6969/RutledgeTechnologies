@@ -87,18 +87,18 @@
       <div class="nav-links" id="primary-nav">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#booking">Book</a></li>
+          <li><a href="#booking" id="book-now">Book</a></li>
           <li><a href="/comparePlans/compare-plans.html">Pricing</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio" id="portfolio-btn">Portfolio</a></li>
         </ul>
       </div>
 
       <div class="off-screen-menu">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#booking">Book</a></li>
+          <li><a href="#booking" id="book-now">Book</a></li>
           <li><a href="/comparePlans/compare-plans.html">Pricing</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio" id="portfolio-btn">Portfolio</a></li>
         </ul>
       </div>
 
@@ -116,10 +116,18 @@
           <h1>modern. sleek. professional.</h1>
           <p class="subhead">websites for you or your business.</p>
           <div class="buttons">
-            <a href="#booking" class="book" aria-label="Book a consultation"
+            <a
+              href="#booking"
+              class="book"
+              id="book-now"
+              aria-label="Book a consultation"
               >Book Now</a
             >
-            <a href="#portfolio" class="portfolio" aria-label="See portfolio"
+            <a
+              href="#portfolio"
+              class="portfolio"
+              id="portfolio-btn"
+              aria-label="See portfolio"
               >Portfolio</a
             >
           </div>
@@ -168,7 +176,7 @@
         <div class="works-container" role="list">
           <!-- Sample card repeated -->
           <div class="work-card" role="listitem">
-            <a href="#"
+            <a href="#" id="portfolio-card"
               ><img
                 src="Assets/Project Photos/Screenshot 2025-08-28 115133.png"
                 alt="Business Project: landing page for a web Design Company"
@@ -206,10 +214,14 @@
               <a
                 href="#booking"
                 class="btn btn-primary"
+                id="book-now"
                 aria-label="Book Starter Site"
                 >Book now</a
               >
-              <a href="/comparePlans/compare-plans.html" class="btn btn-ghost"
+              <a
+                href="/comparePlans/compare-plans.html"
+                class="btn btn-ghost"
+                id="see-details"
                 >See details</a
               >
             </div>
@@ -230,8 +242,13 @@
               <li>2 revision rounds</li>
             </ul>
             <div class="plan-actions">
-              <a href="#booking" class="btn btn-primary">Book now</a>
-              <a href="/comparePlans/compare-plans.html" class="btn btn-ghost"
+              <a href="#booking" class="btn btn-primary" id="book-now"
+                >Book now</a
+              >
+              <a
+                href="/comparePlans/compare-plans.html"
+                class="btn btn-ghost"
+                id="see-details"
                 >Compare plans</a
               >
             </div>
@@ -257,13 +274,13 @@
               <li>Ongoing SEO + 1 update/month</li>
             </ul>
             <div class="plan-actions">
-              <a href="#booking" class="btn btn-primary" id="btn-allin"
+              <a href="#booking" class="btn btn-primary" id="btn-allin book-now"
                 >Start subscription</a
               >
               <a
                 href="/comparePlans/compare-plans.html#matrix"
                 class="btn btn-ghost"
-                id="btn-allin"
+                id="btn-allin see-details"
                 >What’s included</a
               >
             </div>
@@ -409,6 +426,47 @@
         "areaServed": "US-IN, US-IL",
         "sameAs": ["https://www.facebook.com/profile.php?id=61579855261502"]
       }
+    </script>
+    <!-- Vercel Analytics -->
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Vercel Speed Insights -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <!-- Custom Event Tracking Example -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Track "Book Now" button clicks
+        const bookNowBtn = document.querySelector("#book-now");
+        if (bookNowBtn) {
+          bookNowBtn.addEventListener("click", () => {
+            window.va && window.va("track", "BookNowClicked");
+          });
+        }
+
+        // Track "See Details" button clicks
+        const seeDetailsBtn = document.querySelector("#see-details");
+        if (seeDetailsBtn) {
+          seeDetailsBtn.addEventListener("click", () => {
+            window.va && window.va("track", "SeeDetailsClicked");
+          });
+        }
+
+        // Track "See Details" button clicks
+        const portfolioBtn = document.querySelector("#portfolio-btn");
+        if (seeDetailsBtn) {
+          portfolioBtn.addEventListener("click", () => {
+            window.va && window.va("track", "PortfolioClicked");
+          });
+        }
+      });
     </script>
   </body>
 </html>
