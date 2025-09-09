@@ -164,7 +164,7 @@
           <input
             id="url"
             type="text"
-            value="https://rutledgetechnologies.com"
+            value="https://rutledgetechnologies.com/db-card/db-card.html"
           />
 
           <div class="row">
@@ -329,7 +329,7 @@
 
         // Create QR (qrcode.js)
         const qrcode = new QRCode(els.src, {
-          text: (els.url.value || "").trim(),
+          text: normalizeUrl(els.url.value),
           width: size,
           height: size,
           colorDark: els.dark.value || "#000000",
@@ -535,6 +535,35 @@
       els.scanTip.addEventListener("click", showScanTip);
 
       // Auto-generate on load
+      
+      // --- URL helpers & handlers ---
+      function normalizeUrl(u) {
+        u = (u || "").trim();
+        if (!u) return "";
+        if (!/^https?:\/\//i.test(u)) {
+          u = "https://" + u;
+        }
+        return u;
+      }
+
+      function debounce(fn, wait) {
+        let t;
+        return (...args) => {
+          clearTimeout(t);
+          t = setTimeout(() => fn.apply(this, args), wait);
+        };
+      }
+
+      // Auto-generate as you type (debounced), and Enter triggers generation
+      const autoGen = debounce(() => generateQR(), 350);
+      els.url.addEventListener("input", autoGen);
+      els.url.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          generateQR();
+        }
+      });
+
       window.addEventListener("load", generateQR);
     </script>
   </body>
