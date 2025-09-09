@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rutledge Technologies — Modern, Sleek, Professional Websites</title>
+    <meta
+      name="description"
+      content="Rutledge Technologies builds modern, fast, and secure business websites with booking, SEO, and ongoing maintenance. Serving Indiana & Illinois remotely."
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.rutledgetechnologies.com/" />
+
+    <!-- Favicon (add your real paths) -->
+    <link
+      rel="icon"
+      href="/Assets/favicon.ico"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/Assets/favicon.ico"
+      type="image/png"
+      sizes="64x64"
+    />
+    <link rel="apple-touch-icon" href="/Assets/favicon.ico" sizes="180x180" />
+
+    <!-- Open Graph / Twitter -->
+    <!-- Open Graph / Twitter -->
+    <meta
+      property="og:title"
+      content="Rutledge Technologies — Modern, Sleek, Professional Websites"
+    />
+    <meta
+      property="og:description"
+      content="Custom sites, bookings, SEO, and maintenance. Simple pricing, clear results."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://rutledge-technologies.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://rutledge-technologies.vercel.app/Assets/og-image.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rutledge Technologies — Modern, Sleek, Professional Websites"
+    />
+    <meta
+      name="twitter:description"
+      content="Custom sites, bookings, SEO, and maintenance. Simple pricing, clear results."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rutledge-technologies.vercel.app/Assets/og-image.jpg"
+    />
+
+    <!-- CSS / Fonts -->
+    <link rel="stylesheet" href="./variables.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <nav aria-label="Primary">
+      <div class="logo">
+        <a href="#home"
+          ><img
+            src="/Assets/R-logo500px.png"
+            alt="Rutledge Technologies logo"
+            class="logo-img"
+        /></a>
+      </div>
+
+      <div class="nav-links" id="primary-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#booking" id="book-now">Book</a></li>
+          <li><a href="/comparePlans/compare-plans.html">Pricing</a></li>
+          <li><a href="#portfolio" id="portfolio-btn">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#booking" id="book-now">Book</a></li>
+          <li><a href="/comparePlans/compare-plans.html">Pricing</a></li>
+          <li><a href="#portfolio" id="portfolio-btn">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="cta">
+          <!-- One H1 for the page -->
+          <h1>modern. sleek. professional.</h1>
+          <p class="subhead">websites for you or your business.</p>
+          <div class="buttons">
+            <a
+              href="#booking"
+              class="book"
+              id="book-now"
+              aria-label="Book a consultation"
+              >Book Now</a
+            >
+            <a
+              href="#portfolio"
+              class="portfolio"
+              id="portfolio-btn"
+              aria-label="See portfolio"
+              >Portfolio</a
+            >
+          </div>
+        </div>
+        <div class="hero-img" aria-hidden="true">
+          <img
+            class="hero-image"
+            src="Assets/Images/guyonComputer.jpg"
+            alt="Person working on a modern website on a laptop"
+          />
+        </div>
+      </section>
+
+      <section class="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">What We Do</h2>
+        <div class="features-grid" role="list">
+          <div class="feature" role="listitem">
+            <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+            <h3>Custom Design</h3>
+            <p>Tailored websites that fit your brand.</p>
+          </div>
+          <div class="feature" role="listitem">
+            <i data-lucide="shield" aria-hidden="true"></i>
+            <h3>Fast &amp; Secure</h3>
+            <p>Optimized for speed and built to protect your data.</p>
+          </div>
+          <div class="feature" role="listitem">
+            <i data-lucide="headphones" aria-hidden="true"></i>
+            <h3>Ongoing Support</h3>
+            <p>We handle updates, backups, and maintenance.</p>
+          </div>
+          <div class="feature" role="listitem">
+            <i data-lucide="search" aria-hidden="true"></i>
+            <h3>SEO-Ready</h3>
+            <p>Built to rank well from day one.</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="recent-works"
+        id="portfolio"
+        aria-labelledby="recent-heading"
+      >
+        <h2 id="recent-heading">Recent Works</h2>
+        <div class="works-container" role="list">
+          <!-- Sample card repeated -->
+          <div class="work-card" role="listitem">
+            <a href="#" id="portfolio-card"
+              ><img
+                src="Assets/Project Photos/Screenshot 2025-08-28 115133.png"
+                alt="Business Project: landing page for a web Design Company"
+            /></a>
+            <h3><a href="#">Business Project</a></h3>
+            <p>Landing page design for my web design company</p>
+          </div>
+          <!-- (repeat your samples as needed) -->
+        </div>
+      </section>
+
+      <hr class="section-divider" aria-hidden="true" />
+
+      <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
+        <header class="pricing-header">
+          <h2 id="pricing-heading">Pricing</h2>
+          <p>Simple options that scale with you.</p>
+        </header>
+
+        <div class="pricing-grid" role="list">
+          <article class="plan plan--starter" role="listitem">
+            <header class="plan-head">
+              <h3>Starter Site</h3>
+              <p class="plan-price">
+                $500 <span class="plan-term">one-time</span>
+              </p>
+            </header>
+            <ul class="plan-features">
+              <li>Custom design, up to 5 pages</li>
+              <li>Responsive build</li>
+              <li>Contact form + basic SEO setup</li>
+              <li>1 revision round</li>
+            </ul>
+            <div class="plan-actions">
+              <a
+                href="#booking"
+                class="btn btn-primary"
+                id="book-now"
+                aria-label="Book Starter Site"
+                >Book now</a
+              >
+              <a
+                href="/comparePlans/compare-plans.html"
+                class="btn btn-ghost"
+                id="see-details"
+                >See details</a
+              >
+            </div>
+          </article>
+
+          <article class="plan plan-pro" role="listitem">
+            <div class="plan-badge" aria-label="Most Popular">Most Popular</div>
+            <header class="plan-head" id="pro">
+              <h3>Professional Site</h3>
+              <p class="plan-price">
+                $900 <span class="plan-term">one-time</span>
+              </p>
+            </header>
+            <ul class="plan-features" id="pro-features">
+              <li>Everything in Starter (Up to 10 pages)</li>
+              <li>Booking integration (Google Calendar or Calendly)</li>
+              <li>Performance &amp; security hardening</li>
+              <li>2 revision rounds</li>
+            </ul>
+            <div class="plan-actions">
+              <a href="#booking" class="btn btn-primary" id="book-now"
+                >Book now</a
+              >
+              <a
+                href="/comparePlans/compare-plans.html"
+                class="btn btn-ghost"
+                id="see-details"
+                >Compare plans</a
+              >
+            </div>
+          </article>
+
+          <article class="plan plan--allin" role="listitem">
+            <div
+              class="plan-badge plan-badge--highlight"
+              aria-label="Best value"
+            >
+              Best value
+            </div>
+            <header class="plan-head" id="allin">
+              <h3>All-Inclusive</h3>
+              <p class="plan-price">
+                $450 <span class="plan-term">/mo · 12-month</span>
+              </p>
+            </header>
+            <ul class="plan-features" id="allin-features">
+              <li>Custom business site</li>
+              <li>Hosting &amp; domain management</li>
+              <li>Monthly maintenance, backups, updates</li>
+              <li>Ongoing SEO + 1 update/month</li>
+            </ul>
+            <div class="plan-actions">
+              <a href="#booking" class="btn btn-primary" id="btn-allin book-now"
+                >Start subscription</a
+              >
+              <a
+                href="/comparePlans/compare-plans.html#matrix"
+                class="btn btn-ghost"
+                id="btn-allin see-details"
+                >What’s included</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="pricing-addons" aria-labelledby="addons-heading">
+          <h4 id="addons-heading">Add-ons</h4>
+          <ul>
+            <li>
+              <i class="icon" data-lucide="server" aria-hidden="true"></i>
+              Hosting &amp; domain management — $25/mo
+            </li>
+            <li>
+              <i class="icon" data-lucide="wrench" aria-hidden="true"></i>
+              Maintenance &amp; updates — $75/mo
+            </li>
+            <li>
+              <i class="icon" data-lucide="trending-up" aria-hidden="true"></i>
+              SEO growth package — $200/mo
+            </li>
+          </ul>
+          <p class="pricing-note">
+            *Prices shown are starting rates. Final quotes may vary by scope.
+          </p>
+        </div>
+      </section>
+
+      <hr class="section-divider" aria-hidden="true" />
+
+      <section id="booking" class="booking" aria-labelledby="booking-heading">
+        <h2 id="booking-heading">Book a 15-Minute Consultation</h2>
+        <p>
+          Pick a time that works for you—no double-booking, fully synced with my
+          calendar.
+        </p>
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/rutledgeisaac6969/15min?primary_color=1F3A93"
+          style="min-width: 320px; height: 700px"
+        ></div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="contact-lede">
+          Have a project in mind? Send a message and I’ll get back to you.
+        </p>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mnnbpabn"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="_gotcha"
+            class="hp"
+            autocomplete="off"
+            tabindex="-1"
+            aria-hidden="true"
+          />
+          <div class="fields">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+              />
+            </label>
+          </div>
+          <label class="full">
+            <span>Message</span>
+            <textarea
+              name="message"
+              rows="6"
+              required
+              placeholder="Tell me about your website needs…"
+            ></textarea>
+          </label>
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>I agree to be contacted about my inquiry.</span>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+
+        <div class="contact-info">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:rutledgetechnologies@gmail.com"
+              >rutledgetechnologies@gmail.com</a
+            >
+          </p>
+          <p><strong>Service area:</strong> Indiana &amp; Illinois (remote)</p>
+          <p class="socials">
+            <a
+              href="https://www.facebook.com/profile.php?id=61579855261502"
+              target="_blank"
+              rel="noopener"
+            >
+              <i data-lucide="facebook" aria-hidden="true"></i> Facebook
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Rutledge Technologies. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="index.js"></script>
+
+    <!-- LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Rutledge Technologies",
+        "url": "https://www.rutledgetechnologies.com/",
+        "logo": "https://www.rutledgetechnologies.com/Assets/R-logo500px.png",
+        "image": "https://www.rutledgetechnologies.com/Assets/og-image.jpg",
+        "areaServed": "US-IN, US-IL",
+        "sameAs": ["https://www.facebook.com/profile.php?id=61579855261502"]
+      }
+    </script>
+    <!-- Vercel Analytics -->
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Vercel Speed Insights -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <!-- Custom Event Tracking Example -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Track "Book Now" button clicks
+        const bookNowBtn = document.querySelector("#book-now");
+        if (bookNowBtn) {
+          bookNowBtn.addEventListener("click", () => {
+            window.va && window.va("track", "BookNowClicked");
+          });
+        }
+
+        // Track "See Details" button clicks
+        const seeDetailsBtn = document.querySelector("#see-details");
+        if (seeDetailsBtn) {
+          seeDetailsBtn.addEventListener("click", () => {
+            window.va && window.va("track", "SeeDetailsClicked");
+          });
+        }
+
+        // Track "See Details" button clicks
+        const portfolioBtn = document.querySelector("#portfolio-btn");
+        if (seeDetailsBtn) {
+          portfolioBtn.addEventListener("click", () => {
+            window.va && window.va("track", "PortfolioClicked");
+          });
+        }
+      });
+    </script>
+    <script src="./Assets/js/qrcode.min.js"></script>
+  </body>
+</html>

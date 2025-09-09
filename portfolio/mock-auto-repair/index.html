@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Auto Repair</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <p>Auto Repair Shop</p>
+      </div>
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#hero">Home</a></li>
+        <li class="dropdown nav-link">
+          <a href="#services">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Services</a
+          >
+          <ul class="dropdown-menu">
+            <li><a href="#brakes">Brake Repair</a></li>
+            <li><a href="#oil">Oil Change</a></li>
+            <li><a href="#diagnostics">Diagnostics</a></li>
+          </ul>
+        </li>
+        <li class="dropdown nav-link">
+          <a href="#products"><i class="fa-solid fa-box-open"></i> Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="#batteries">Batteries</a></li>
+            <li><a href="#tires">Tires</a></li>
+            <li><a href="#filters">Air Filters</a></li>
+          </ul>
+        </li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="reviews" class="nav-link">Reviews</a></li>
+        <li>
+          <a href="contact" class="nav-link"
+            ><i class="fa-solid fa-envelope"></i> Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="hero" id="hero">
+      <div class="page-bg" aria-hidden="true"></div>
+      <header class="hero-header">
+        <h1>Fast, reliable auto repair in Evansville</h1>
+        <p>Brakes • Oil • Diagnostics • Tires</p>
+        <a href="#book" class="btn-primary">Book Appointment</a>
+        <span>Call Now: (888) 555-5858</span>
+      </header>
+    </section>
+
+    <section class="services section-opaque" id="services">
+      <header>
+        <h3>🛠️ Our Services</h3>
+        <p>Quality repairs and maintenance to keep you safe on the road.</p>
+      </header>
+      <div class="service-card" id="brakes">
+        <i class="fa-solid fa-car-burst"></i>
+        <h4>Brake Repair & Replacement</h4>
+        <p>Smooth, safe stops with high-quality parts.</p>
+      </div>
+      <div class="service-card" id="oil">
+        <i class="fa-solid fa-oil-can"></i>
+        <h4>Oil Changes & Fluids</h4>
+        <p>Extend engine life with routine maintenance.</p>
+      </div>
+      <div class="service-card" id="diagnostics">
+        <i class="fa-solid fa-computer"></i>
+        <h4>Engine Diagnostics</h4>
+        <p>Pinpoint issues fast with advanced scanning tools.</p>
+      </div>
+      <div class="service-card" id="batteries">
+        <i class="fa-solid fa-car-battery"></i>
+        <h4>Battery Replacement</h4>
+        <p>Reliable starts, even in the coldest weather.</p>
+      </div>
+      <div class="service-card" id="ac">
+        <i class="fa-solid fa-fan"></i>
+        <h4>Heating & A/C Service</h4>
+        <p>Comfort you can count on year-round</p>
+      </div>
+      <div class="footnote">
+        <p>Need a specific repair? Call us today!</p>
+        <p>Phone: (888) 555-5858</p>
+      </div>
+    </section>
+
+    <section class="products section-translucent" id="products">
+      <header>
+        <h3>🛒 Products We Offer</h3>
+        <p>Affordable, reliable auto parts and accessories.</p>
+      </header>
+      <div class="product-card" id="batteries">
+        <i class="fa-solid fa-car-battery"></i>
+        <h4>OEM Car Batteries</h4>
+        <p>$139.99 — Long-lasting power with warranty.</p>
+      </div>
+      <div class="product-card" id="tires">
+        <i class="fa-solid fa-circle"></i>
+        <h4>All-Season Tires</h4>
+        <p>Starting at 109.99 each — Safety in all weather.</p>
+      </div>
+      <div class="product-card" id="wipers">
+        <i class="fa-solid fa-droplet"></i>
+        <h4>Windshield Wipers</h4>
+        <p>$24.99 installed — Clear vision, rain or shine.</p>
+      </div>
+      <div class="product-card" id="filters">
+        <i class="fa-solid fa-filter"></i>
+        <h4>Engine Air Filters</h4>
+        <p>$19.99 — Better mileage, cleaner air.</p>
+      </div>
+      <div class="footnote">
+        <p>Looking for something else?</p>
+        <a href="#contact">Request a custom order.</a>
+      </div>
+    </section>
+    <section class="about section-opaque" id="about">
+      <header>
+        <h2>About Us</h2>
+        <p>Family-owned. Locally trusted. ASE-certified Technicians</p>
+      </header>
+      <p>
+        We've been serving the Evansville community since 2013 with honest,
+        reliable auto repair. Our ASE-certified technicians take pride in
+        deliveringg fast service without cutting corners
+      </p>
+      <p>
+        Whether it's a simple oil change or a complex engine repair, we treat
+        every vehicle like our own. With transparent pricing and same-day
+        service on most jobs, you can trust us to get you back on the road
+        quickly.
+      </p>
+
+      <h3>Why Choose Us</h3>
+      <ul class="reasons">
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i> Transparent pricing, no hidden
+          fees
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i> Same-day service on common repairs
+        </li>
+        <li>
+          <i class="fa-solid fa-shield-halved"></i> Warranty-backed parts and
+          labor
+        </li>
+        <li>
+          <i class="fa-solid fa-handshake"></i> Friendly, professional service
+        </li>
+      </ul>
+    </section>
+    <section class="reviews section-translucent" id="reviews">
+      <header>
+        <h2>What Our Customers Say</h2>
+        <p>Trusted by drivers across Evansville</p>
+      </header>
+      <div class="review-card">
+        <h5>Sarah M.</h5>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>
+          Fast, friendly, and honest. Best repair shop I've been to in years.
+        </p>
+      </div>
+      <div class="review-card">
+        <h5>Jason R.</h5>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>
+          They got me back on the road in hours, not days. Highly recommend.
+        </p>
+      </div>
+      <div class="review-card">
+        <h5>Amanda T.</h5>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>
+          Transparent pricing and great communication. I won't go anywhere else.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact section-translucent" id="contact">
+      <header>
+        <h3>Get In Touch</h3>
+        <p>Book an appointment, get a quote, or just stop by.</p>
+      </header>
+      <div class="contact-details">
+        <ul>
+          <li>
+            <i class="fa-solid fa-location-dot"></i> Address: 123 Main Street,
+            Evansville, Indiana
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i> Hours: Mon–Fri: 8am–6pm, Sat:
+            9am–2pm
+          </li>
+          <li><i class="fa-solid fa-phone"></i> Phone: (888) 555-5858</li>
+          <li>
+            <i class="fa-solid fa-map"></i> Google Maps Link: [View Directions]
+          </li>
+        </ul>
+
+        <form
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Name -->
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          />
+          <!-- Email -->
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="you@example.com"
+            required
+          />
+          <!-- Phone -->
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="(888) 555-5858"
+          />
+
+          <!--  Subject -->
+          <label for="Subject">Service / Product Inquiry</label>
+          <select name="Subject" id="Subject" required>
+            <option value="">-- Please Choose --</option>
+            <option value="brakes">Brake Repair</option>
+            <option value="oil">Oil Change</option>
+            <option value="diagnostics">Diagnostics</option>
+            <option value="tires">Tires</option>
+            <option value="batteries">Batteries</option>
+            <option value="general">General Inquiry</option>
+          </select>
+
+          <!-- Message -->
+          <label for="message">Your Message</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            placeholder="How can we help you?"
+            required
+          ></textarea>
+
+          <!-- Hidden field for product selections -->
+          <input
+            type="hidden"
+            id="selectedProducts"
+            name="selectedProducts"
+            value=""
+          />
+
+          <!-- Submit -->
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="separator"></div>
+      <p>Auto Repair © 2013</p>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li>
+          <a href="#services"
+            ><i class="fa-solid fa-screwdriver-wrench"></i> Services</a
+          >
+        </li>
+        <li>
+          <a href="#products"><i class="fa-solid fa-box-open"></i> Products</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+      <p>
+        <i class="fa-brands fa-facebook"></i>
+        <a href="facebook.com">Catch us on Facebook!</a>
+      </p>
+      <p>
+        Modern. Sleek. Professional Auto Repair Websites - by
+        <svg
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 375 375"
+          role="img"
+          aria-label="Rutledge Technologies logo"
+        >
+          <defs>
+            <clipPath id="c1">
+              <path
+                d="M 20.308594 20.308594 L 354.808594 20.308594 L 354.808594 354.808594 L 20.308594 354.808594 Z"
+              />
+            </clipPath>
+            <clipPath id="c2">
+              <rect x="0" y="0" width="245" height="375" />
+            </clipPath>
+            <clipPath id="c3">
+              <rect x="0" y="0" width="114" height="375" />
+            </clipPath>
+          </defs>
+
+          <g clip-path="url(#c1)">
+            <path
+              fill="currentColor"
+              d="M 187.5 354.691406 C 95.132812 354.691406 20.308594 279.351562 20.308594 187.5 C 20.308594 95.648438 95.132812 20.308594 187.5 20.308594 C 279.867188 20.308594 354.691406 95.132812 354.691406 187.5 C 354.691406 279.867188 279.351562 354.691406 187.5 354.691406 Z M 187.5 30.628906 C 100.808594 30.628906 30.628906 100.808594 30.628906 187.5 C 30.628906 274.191406 100.808594 344.371094 187.5 344.371094 C 274.191406 344.371094 344.371094 274.191406 344.371094 187.5 C 344.371094 100.808594 273.675781 30.628906 187.5 30.628906 Z"
+            />
+          </g>
+
+          <g transform="translate(72,0)" clip-path="url(#c2)">
+            <g fill="currentColor" transform="translate(0.961325, 290.481086)">
+              <path
+                d="M 37.375 0 L 37.375 -247.21875 L 127.15625 -247.21875 C 143.726562 -247.21875 157.648438 -244.484375 168.921875 -239.015625 C 180.203125 -233.546875 188.660156 -225.820312 194.296875 -215.84375 C 199.929688 -205.875 202.75 -194.066406 202.75 -180.421875 C 202.75 -165.097656 198.914062 -152.445312 191.25 -142.46875 C 183.582031 -132.488281 171.632812 -125.019531 155.40625 -120.0625 L 155.40625 -116.515625 C 163.40625 -113.359375 169.941406 -108.394531 175.015625 -101.625 C 180.085938 -94.863281 184.765625 -84.773438 189.046875 -71.359375 L 211.875 0 L 181.953125 0 L 157.265625 -75.59375 C 154.328125 -84.5 150.941406 -91.488281 147.109375 -96.5625 C 143.273438 -101.632812 138.425781 -105.296875 132.5625 -107.546875 C 126.707031 -109.796875 119.269531 -110.921875 110.25 -110.921875 L 66.453125 -110.921875 L 66.453125 0 Z M 126.484375 -135.609375 C 141.929688 -135.609375 153.429688 -139.1875 160.984375 -146.34375 C 168.535156 -153.507812 172.3125 -164.421875 172.3125 -179.078125 C 172.3125 -193.734375 168.535156 -204.640625 160.984375 -211.796875 C 153.429688 -218.953125 141.929688 -222.53125 126.484375 -222.53125 L 66.453125 -222.53125 L 66.453125 -135.609375 Z"
+              />
+            </g>
+          </g>
+
+          <g transform="translate(116,0)" clip-path="url(#c3)">
+            <g fill="currentColor" transform="translate(0.267663, 290.481086)">
+              <path
+                d="M 66.453125 0 L 37.375 0 L 37.375 -247.21875 L 66.453125 -247.21875 Z"
+              />
+            </g>
+          </g>
+        </svg>
+
+        <a href="rutledgetechnologies.com">Rutledge Technologies</a>
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
